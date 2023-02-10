@@ -20,18 +20,16 @@ int main () {
         string line;
         
         while (getline(file, line)) {
-            printf("%s", line.c_str());
+            // printf("%s", line.c_str());
         }
 
         file.close();
     }
 
     auto t2 = high_resolution_clock::now();
-    auto ms_int = duration_cast<milliseconds>(t2 - t1);
     duration<double, milli> ms_double = t2 - t1;
 
-    cout << ms_int.count() << "\nms\n";
-    cout << ms_double.count() << "ms\n";
+    cout << "\n" << ms_double.count() << "ms\n";
 
     return 0;
 }
