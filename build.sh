@@ -1,5 +1,5 @@
 #!/bin/sh
 
- g++ -std=c++11 -o ./comp.out ./main.cpp
+clang -o ./comp.out ./main.c
 
  ./comp.out
